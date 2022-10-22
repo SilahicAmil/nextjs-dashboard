@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { MdOutlineDarkMode } from "react-icons/md";
 
-const SideNav = (props) => {
+const Navigation = (props) => {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 ">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost btn-circle">
@@ -27,19 +27,21 @@ const SideNav = (props) => {
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a>Dashboards</a>
+              <Link href="/dashboards">Dashboards</Link>
             </li>
             <li>
-              <a>New Dashboard</a>
+              <Link href="/new-dashboard">New Dashboard</Link>
             </li>
             <li>
-              <a>User Profile</a>
+              <Link href="/user-profile">User Profile</Link>
             </li>
           </ul>
         </div>
       </div>
       <div className="navbar-center">
-        <a className="btn btn-ghost normal-case text-2xl">Takeya Ticket</a>
+        <Link href="/">
+          <a className="btn btn-ghost normal-case text-2xl">Takeya Ticket</a>
+        </Link>
       </div>
       <div className="navbar-end">
         <button className="btn btn-ghost btn-circle">
@@ -50,4 +52,4 @@ const SideNav = (props) => {
   );
 };
 
-export default SideNav;
+export default Navigation;

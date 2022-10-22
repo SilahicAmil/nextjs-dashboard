@@ -1,10 +1,10 @@
-import SideNav from "../SideNav/SideNav";
+import Navigation from "../Navigation/Navigation";
 
 const Layout = (props) => {
   return (
     <>
-      <div className="p-2 font-mono">{props.children}</div>
-      <SideNav />
+      <Navigation />
+      <main className="font-mono">{props.children}</main>
     </>
   );
 };

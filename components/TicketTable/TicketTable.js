@@ -20,7 +20,6 @@ const TicketTable = (props) => {
           </tr>
         </thead>
         <tbody>
-          {/* <!-- row 1 --> */}
           {props.data.map((item) => {
             return (
               <tr key={item.id}>

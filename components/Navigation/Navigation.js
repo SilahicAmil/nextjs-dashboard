@@ -27,9 +27,8 @@ const Navigation = (props) => {
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <Link href="/dashboards">Dashboards</Link>
+              <Link href="/new-ticket">New Ticket</Link>
             </li>
-
             <li>
               <Link href="/user-profile">User Profile</Link>
             </li>

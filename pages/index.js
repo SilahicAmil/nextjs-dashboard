@@ -1,3 +1,4 @@
+import Head from "next/head";
 import TicketTable from "../components/TicketTable/TicketTable";
 
 const DUMMY_DATA = [
@@ -24,6 +25,9 @@ const DUMMY_DATA = [
 const HomePage = () => {
   return (
     <>
+      <Head>
+        <title>Takeya Ticket</title>
+      </Head>
       <div>
         <h1 className="text-2xl p-4">Home Page</h1>
 

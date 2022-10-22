@@ -29,9 +29,7 @@ const Navigation = (props) => {
             <li>
               <Link href="/dashboards">Dashboards</Link>
             </li>
-            <li>
-              <Link href="/new-dashboard">New Dashboard</Link>
-            </li>
+
             <li>
               <Link href="/user-profile">User Profile</Link>
             </li>

@@ -1,6 +1,6 @@
 import { AiOutlineDoubleRight } from "react-icons/ai";
 
-const Card = (props) => {
+const TicketTable = (props) => {
   return (
     <div className="overflow-x-auto w-full">
       <table className="table w-full">
@@ -44,7 +44,9 @@ const Card = (props) => {
                   <button className="btn btn-ghost btn-xs">#123456</button>
                 </th>
                 <th className="justify-center items-center">
-                  <AiOutlineDoubleRight />
+                  <button className="btn hover:bg-gray-500">
+                    <AiOutlineDoubleRight />
+                  </button>
                 </th>
               </tr>
             );
@@ -55,4 +57,4 @@ const Card = (props) => {
   );
 };
 
-export default Card;
+export default TicketTable;

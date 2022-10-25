@@ -1,20 +1,23 @@
 import { AiOutlineDoubleRight } from "react-icons/ai";
+import { useRouter } from "next/router";
 
 const TicketTable = (props) => {
+  const router = useRouter();
+
+  const showDetailsHandler = () => {
+    router.push("/" + props.id);
+  };
+
   return (
     <div className="overflow-x-auto w-full">
       <table className="table w-full">
         {/* <!-- head --> */}
         <thead>
           <tr>
-            <th>
-              <label>
-                <input type="checkbox" className="checkbox" />
-              </label>
-            </th>
+            <th></th>
 
             <th>Owner</th>
-            <th>Description</th>
+            <th>Ttitle</th>
             <th>Ticket Id</th>
             <th></th>
           </tr>
@@ -23,11 +26,7 @@ const TicketTable = (props) => {
           {props.data.map((item) => {
             return (
               <tr key={item.id}>
-                <th>
-                  <label>
-                    <input type="checkbox" className="checkbox" />
-                  </label>
-                </th>
+                <th></th>
 
                 <td>
                   {item.owner}
@@ -40,10 +39,13 @@ const TicketTable = (props) => {
                   <p className="text-xs">{item.title}</p>
                 </td>
                 <th>
-                  <button className="btn btn-ghost btn-xs">#123456</button>
+                  <button className="btn btn-ghost btn-xs">{item.id}</button>
                 </th>
                 <th className="justify-center items-center">
-                  <button className="btn hover:bg-gray-500">
+                  <button
+                    className="btn hover:bg-gray-500"
+                    onClick={showDetailsHandler}
+                  >
                     <AiOutlineDoubleRight />
                   </button>
                 </th>

@@ -3,19 +3,19 @@ import TicketTable from "../components/TicketTable/TicketTable";
 
 const DUMMY_DATA = [
   {
-    id: "t1",
+    id: "t12",
     owner: "John Stossel",
     tier: "Tier A",
     title: "Fix useMemo Hook",
   },
   {
-    id: "t2",
+    id: "t23",
     owner: "Steven Stossel",
     tier: "Tier B",
     title: "Fix Form Hook",
   },
   {
-    id: "t3",
+    id: "t34",
     owner: "John Stevens",
     tier: "Tier AA",
     title: "Fix useEffect Hook",

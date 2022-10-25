@@ -18,7 +18,7 @@
 
 * Fetch Owner, Title, Tier, Ticket ID Only
 * Add API to fetch ticket data
-* Update owner on main page ticket table based off claimed
+* Update owner on based off claimed in ticket details
 
 - Ticket Details -----
 

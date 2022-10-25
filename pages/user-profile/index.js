@@ -7,3 +7,7 @@ const UserProfilePage = () => {
 };
 
 export default UserProfilePage;
+
+// getStaticProps for userinformation
+//  need to learn next auth for this
+// add file to API to get user data

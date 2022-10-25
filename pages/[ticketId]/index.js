@@ -9,3 +9,6 @@ const TicketDetailsPage = () => {
 };
 
 export default TicketDetailsPage;
+
+//  getStaticProps for getting ticketId based of objectID
+// add file to API to do above and just fetch here

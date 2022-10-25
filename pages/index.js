@@ -39,3 +39,6 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
+// add getStatic props to fetch data
+// add file to API for just fetching data

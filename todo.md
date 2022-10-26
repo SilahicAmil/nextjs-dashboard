@@ -16,14 +16,15 @@
 
 - Main Ticket Table -----
 
-* Fetch Owner, Title, Tier, Ticket ID Only
+* Fetch Owner (from context), Title, Tier, Ticket ID Only
 * Add API to fetch ticket data
-* Update owner on based off claimed in ticket details
+* Update owner on based off claimed in ticket details - Redux/Context
+* Add New Job/ Ticket Button above table on main page
 
 - Ticket Details -----
 
 * Add ticket details component(s) - check whiteboard/notebook for layout
 * Add API route for notes based off ticketId
-* Add claim button to ticket details
-* Update owner on main page ticket table based off claimed
+* Add claim button to ticket details - Redux/Context needed for this!
+* Update owner on main page ticket table based off claimed - Either Redux/Context
 * Fetch files in ticket

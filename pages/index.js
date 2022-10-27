@@ -12,7 +12,7 @@ const DUMMY_DATA = [
     id: "t23",
     owner: "Steven Stossel",
     tier: "Tier B",
-    title: "Fix Form Hook",
+    title: "Fix Form Hook.",
   },
   {
     id: "t34",

@@ -9,7 +9,7 @@ const TicketTable = (props) => {
   };
 
   return (
-    <div className="overflow-x-auto w-full">
+    <div className="overflow-x-auto w-full ">
       <table className="table w-full">
         {/* <!-- head --> */}
         <thead>
@@ -31,12 +31,14 @@ const TicketTable = (props) => {
                 <td>
                   {item.owner}
                   <br></br>
-                  <span className="badge badge-ghost badge-sm">
+                  <span className="badge badge-ghost badge-sm p-2">
                     {item.tier} Ticket
                   </span>
                 </td>
                 <td>
-                  <p className="text-xs">{item.title}</p>
+                  <p className="text-xs truncate flex-shrink p-10">
+                    {item.title}
+                  </p>
                 </td>
                 <th>
                   <button className="btn btn-ghost btn-xs">{item.id}</button>

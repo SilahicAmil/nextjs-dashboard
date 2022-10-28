@@ -11,7 +11,7 @@
 * Add new ticket component(s)
 * Add API route for adding new ticket
 * View notebook on how new ticket form should look
-* Add Tier Dropdown - Tier C, Tier B, Tier A, Tier AA
+* Add Tier Dropdown - Tier C, Tier B, Tier A
 * Figure out of how attach files
 
 - Main Ticket Table -----

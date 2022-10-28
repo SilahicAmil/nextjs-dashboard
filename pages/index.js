@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import TicketTable from "../components/TicketTable/TicketTable";
 
 const DUMMY_DATA = [
@@ -29,7 +30,9 @@ const HomePage = () => {
         <title>Takeya Ticket</title>
       </Head>
       <div>
-        <h1 className="text-2xl p-4">Home Page</h1>
+        <button className="btn flex flex-row-reverse bg-red-500 text-white m-4 ">
+          <Link href="/new-ticket">New Ticket</Link>
+        </button>
 
         {/* Add a  */}
         <TicketTable data={DUMMY_DATA} />

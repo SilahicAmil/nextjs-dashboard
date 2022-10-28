@@ -1,7 +1,10 @@
+import NewTicket from "../../components/NewTicket/NewTicket";
+
 const NewTicketPage = () => {
   return (
     <>
       <h1>New Ticket Page</h1>
+      <NewTicket />
     </>
   );
 };

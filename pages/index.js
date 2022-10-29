@@ -37,7 +37,6 @@ const HomePage = (props) => {
           <Link href="/new-ticket">New Ticket</Link>
         </button>
 
-        {/* Add a  */}
         <TicketTable tickets={props.tickets} />
       </div>
     </>

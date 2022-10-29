@@ -12,27 +12,29 @@
 
 - New Ticket ----- (Practically Done - Finishing this first)
 
-* Setup submitFormHandler with the new ticket API
-* Add Limitation to number of characters allowed in title and description
-* Move Form into a custom hook most likely
+<!-- * Setup submitFormHandler with the new ticket API -->
+
+- Add Limitation to number of characters allowed in title and description
+- Move Form into a custom hook most likely
   <!-- * Add new ticket component(s) -->
   <!-- * Add API route for adding new ticket -->
   <!-- - View notebook on how new ticket form should look -->
   <!-- - Add Tier Dropdown - Tier C, Tier B, Tier A -->
   <!-- - Figure out of how attach files -->
 
-- Main Ticket Table ----- (Third Most Time Taker)
+* Main Ticket Table ----- (Third Most Time Taker)
 
-* Fetch Owner (from context), Title, Tier, Ticket ID Only
-* Add API to fetch ticket data
-* Update owner on based off claimed in ticket details - Redux/Context
+<!-- * Fetch Owner (from context), Title, Tier, Ticket ID Only -->
+<!-- * Add API to fetch ticket data -->
+
+- Update owner on based off claimed in ticket details - Redux/Context
 <!-- * Add New Job/ Ticket Button above table on main page -->
-* Style New Job Button
+- Style New Job Button
 
-- Ticket Details ----- (Will Take The Most Time - Start Here)
+* Ticket Details ----- (Will Take The Most Time - Start Here)
 
-* Add ticket details component(s) - check whiteboard/notebook for layout
-* Add API route for notes based off ticketId
-* Add claim button to ticket details - Redux/Context needed for this!
-* Update owner on main page ticket table based off claimed - Either Redux/Context
-* Fetch files in ticket
+- Add ticket details component(s) - check whiteboard/notebook for layout
+- Add API route for notes based off ticketId
+- Add claim button to ticket details - Redux/Context needed for this!
+- Update owner on main page ticket table based off claimed - Either Redux/Context
+- Fetch files in ticket

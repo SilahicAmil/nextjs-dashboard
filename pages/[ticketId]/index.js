@@ -1,4 +1,4 @@
-const TicketDetailsPage = () => {
+const TicketDetailsPage = (props) => {
   return (
     <>
       <div>

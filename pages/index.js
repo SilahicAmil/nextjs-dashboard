@@ -4,19 +4,19 @@ import TicketTable from "../components/TicketTable/TicketTable";
 
 const DUMMY_DATA = [
   {
-    id: "t12",
+    ticketId: "123",
     owner: "John Stossel",
     tier: "Tier A",
     title: "Fix useMemo Hook",
   },
   {
-    id: "t23",
+    ticketId: "t23",
     owner: "Steven Stossel",
     tier: "Tier B",
     title: "Fix Form Hook.",
   },
   {
-    id: "t34",
+    ticketId: "t34",
     owner: "John Stevens",
     tier: "Tier AA",
     title: "Fix useEffect Hook",
@@ -28,8 +28,10 @@ const HomePage = () => {
     <>
       <Head>
         <title>Takeya Ticket</title>
+        <meta content="" />
       </Head>
       <div>
+        {/* Move this into it's own component */}
         <button className="btn flex flex-row-reverse bg-red-500 text-white m-4 ">
           <Link href="/new-ticket">New Ticket</Link>
         </button>

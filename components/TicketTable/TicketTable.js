@@ -5,7 +5,12 @@ const TicketTable = (props) => {
   const router = useRouter();
 
   const showDetailsHandler = () => {
-    router.push("/" + props.id);
+    // figure out why this isn't working
+    // showing /undefined
+    // might fix itself once I get fetching on main index.js
+    // yeah definately not working because I dont have fetching and getStaticProps
+    router.push("/" + props.ticketId);
+    console.log(props.name);
   };
 
   return (
@@ -15,7 +20,6 @@ const TicketTable = (props) => {
         <thead>
           <tr>
             <th></th>
-
             <th>Owner</th>
             <th>Ttitle</th>
             <th>Ticket Id</th>
@@ -25,7 +29,7 @@ const TicketTable = (props) => {
         <tbody>
           {props.data.map((item) => {
             return (
-              <tr key={item.id}>
+              <tr key={item.ticketId}>
                 <th></th>
 
                 <td>
@@ -41,7 +45,9 @@ const TicketTable = (props) => {
                   </p>
                 </td>
                 <th>
-                  <button className="btn btn-ghost btn-xs">{item.id}</button>
+                  <button className="btn btn-ghost btn-xs">
+                    {item.ticketId}
+                  </button>
                 </th>
                 <th className="justify-center items-center">
                   <button

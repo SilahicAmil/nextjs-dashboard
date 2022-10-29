@@ -7,7 +7,7 @@ const Helper = async (req, res) => {
     const client = await MongoClient.connect(
       "mongodb+srv://designate:12345@cluster0.hho9svc.mongodb.net/?retryWrites=true&w=majority"
     );
-
+    // add try catch block
     const db = client.db();
 
     const ticketsCollection = db.collection("tickets");

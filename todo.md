@@ -1,4 +1,8 @@
-- USER PROFILE -----
+- Overall -----
+- Find a Color Pallete that works across the app
+- Probably need to learn some UI/UX for this
+
+- USER PROFILE ----- (Second Most Time Taker)
 
 * Add user profile component(s)
 * View notebook to see what user profile needs to look like
@@ -6,7 +10,7 @@
 * Add API route to fetch user data
 * Figure out Next Auth
 
-- New Ticket -----
+- New Ticket ----- (Practically Done)
 
 * Setup submitFormHandler with the new ticket API
 * Add Limitation to number of characters allowed in title and description
@@ -17,14 +21,15 @@
   <!-- - Add Tier Dropdown - Tier C, Tier B, Tier A -->
   <!-- - Figure out of how attach files -->
 
-- Main Ticket Table -----
+- Main Ticket Table ----- (Third Most Time Taker)
 
 * Fetch Owner (from context), Title, Tier, Ticket ID Only
 * Add API to fetch ticket data
 * Update owner on based off claimed in ticket details - Redux/Context
-* Add New Job/ Ticket Button above table on main page
+<!-- * Add New Job/ Ticket Button above table on main page -->
+* Style New Job Button
 
-- Ticket Details -----
+- Ticket Details ----- (Will Take The Most Time - Start Here)
 
 * Add ticket details component(s) - check whiteboard/notebook for layout
 * Add API route for notes based off ticketId

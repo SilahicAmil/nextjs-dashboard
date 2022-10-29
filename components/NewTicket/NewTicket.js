@@ -1,11 +1,15 @@
 import { useRef } from "react";
+import { useRouter } from "next/router";
 
 const NewTicket = () => {
+  // Extract all this into a form hook
   const titleRef = useRef();
   const tierRef = useRef();
   const descriptionRef = useRef();
   const platformRef = useRef();
   const fileRef = useRef();
+
+  const router = useRouter();
 
   const submitFormHandler = (event) => {
     event.preventDefault();
@@ -25,6 +29,7 @@ const NewTicket = () => {
     };
 
     event.target.reset();
+    router.push("/");
 
     console.log(formData);
   };
@@ -48,9 +53,6 @@ const NewTicket = () => {
                 placeholder="Title"
                 ref={titleRef}
               />
-              {/* <p className="text-red-500 text-xs italic">
-                Please fill out this field.
-              </p> */}
             </div>
             <div className="w-full md:w-1/2 px-3">
               <label

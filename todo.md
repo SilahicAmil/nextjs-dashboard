@@ -14,7 +14,8 @@
 
 <!-- * Setup submitFormHandler with the new ticket API -->
 
-- Add Limitation to number of characters allowed in title and description
+- Add Limitation to number of characters allowed in title and name
+- Description limit to like 500 characters maybe
 - Move Form into a custom hook most likely
   <!-- * Add new ticket component(s) -->
   <!-- * Add API route for adding new ticket -->

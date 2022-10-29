@@ -10,7 +10,7 @@
 * Add API route to fetch user data
 * Figure out Next Auth
 
-- New Ticket ----- (Practically Done)
+- New Ticket ----- (Practically Done - Finishing this first)
 
 * Setup submitFormHandler with the new ticket API
 * Add Limitation to number of characters allowed in title and description

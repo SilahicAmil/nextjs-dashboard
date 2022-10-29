@@ -27,7 +27,7 @@ const TicketTable = (props) => {
           </tr>
         </thead>
         <tbody>
-          {props.data.map((item) => {
+          {props.tickets.map((item) => {
             return (
               <tr key={item.ticketId}>
                 <th></th>
@@ -46,7 +46,7 @@ const TicketTable = (props) => {
                 </td>
                 <th>
                   <button className="btn btn-ghost btn-xs">
-                    {item.ticketId}
+                    # {item.id.substring(0, 8)}
                   </button>
                 </th>
                 <th className="justify-center items-center">

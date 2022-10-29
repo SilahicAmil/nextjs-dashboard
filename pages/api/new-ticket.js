@@ -1,11 +1,11 @@
 import { MongoClient } from "mongodb";
 
-const Helper = async (req, res) => {
+async function helper(req, res) {
   if (req.method === "POST") {
-    const data = req.body();
+    const data = req.body;
 
     const client = await MongoClient.connect(
-      "mongodb+srv://designate:12345@cluster0.hho9svc.mongodb.net/?retryWrites=true&w=majority"
+      "mongodb+srv://designate:Scabby123@cluster0.hho9svc.mongodb.net/?retryWrites=true&w=majority"
     );
     // add try catch block
     const db = client.db();
@@ -19,6 +19,6 @@ const Helper = async (req, res) => {
 
     res.status(201).json({ message: "new ticket has been inserted" });
   }
-};
+}
 
-export default Helper;
+export default helper;

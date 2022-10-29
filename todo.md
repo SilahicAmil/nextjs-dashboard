@@ -2,7 +2,7 @@
 - Find a Color Pallete that works across the app
 - Probably need to learn some UI/UX for this
 
-- USER PROFILE ----- (Second Most Time Taker)
+- USER PROFILE ----- (Need to implement this before I can add Owner Button)
 
 * Add user profile component(s)
 * View notebook to see what user profile needs to look like

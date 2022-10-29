@@ -17,7 +17,7 @@ const TicketTable = (props) => {
         <thead>
           <tr>
             <th></th>
-            <th>Owner</th>
+            <th>Submitter</th>
             <th>Ttitle</th>
             <th>Ticket Id</th>
             <th></th>

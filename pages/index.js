@@ -45,7 +45,7 @@ const HomePage = (props) => {
 
 export default HomePage;
 
-export async function getStaticProps() {
+export const getStaticProps = async () => {
   const client = await MongoClient.connect(
     "mongodb+srv://designate:Scabby123@cluster0.hho9svc.mongodb.net/?retryWrites=true&w=majority"
   );
@@ -71,7 +71,7 @@ export async function getStaticProps() {
     },
     revalidate: 15,
   };
-}
+};
 
 // add getStatic props to fetch data
 // add file to API for just fetching data

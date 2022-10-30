@@ -1,6 +1,6 @@
 import { MongoClient } from "mongodb";
 
-async function helper(req, res) {
+const helper = async (req, res) => {
   if (req.method === "POST") {
     const data = req.body;
 
@@ -19,6 +19,6 @@ async function helper(req, res) {
 
     res.status(201).json({ message: "new ticket has been inserted" });
   }
-}
+};
 
 export default helper;

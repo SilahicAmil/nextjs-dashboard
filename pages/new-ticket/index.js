@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 const NewTicketPage = () => {
   const router = useRouter();
 
-  async function addTicketHandler(enteredTicketData) {
+  const addTicketHandler = async (enteredTicketData) => {
     const response = await fetch("/api/new-ticket", {
       method: "POST",
       body: JSON.stringify(enteredTicketData),
@@ -17,7 +17,7 @@ const NewTicketPage = () => {
     console.log(data);
 
     router.push("/");
-  }
+  };
 
   return (
     <>

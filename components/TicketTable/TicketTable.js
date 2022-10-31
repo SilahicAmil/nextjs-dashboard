@@ -2,13 +2,20 @@ import { AiOutlineDoubleRight } from "react-icons/ai";
 import { useRouter } from "next/router";
 
 const TicketTable = (props) => {
-  const router = useRouter();
+  // I think this isn't working because it's the parent level components
+  // so props only go to each item wthin the return()
 
-  const showDetailsHandler = () => {
-    // still showing /undefined
-    // probably because I don't have it setup in [tikcketId]
-    router.push("/" + props.tier);
-  };
+  // If I made the button a child component I think I could use the below
+  // have a workaround for now but interesting
+  // const router = useRouter();
+
+  // const showDetailsHandler = () => {
+  //   // still showing /undefined
+  //   router.push("/" + props.ticketId);
+  // };
+
+  // // props.id is undefined?
+  // console.log(props.id);
 
   return (
     <div className="overflow-x-auto w-full ">
@@ -24,7 +31,12 @@ const TicketTable = (props) => {
           </tr>
         </thead>
         <tbody>
-          {props.tickets.map((item) => {
+          {/* Could probably seperate below into own component 
+        
+        React/NexJs is weird with tables  so IDK if that would work
+        
+        */}
+          {props.ticket.map((item) => {
             return (
               <tr key={item.id}>
                 <th></th>
@@ -49,7 +61,9 @@ const TicketTable = (props) => {
                 <th className="justify-center items-center">
                   <button
                     className="btn hover:bg-gray-500"
-                    onClick={showDetailsHandler}
+                    onClick={() => {
+                      router.push("/" + item.id);
+                    }}
                   >
                     <AiOutlineDoubleRight />
                   </button>

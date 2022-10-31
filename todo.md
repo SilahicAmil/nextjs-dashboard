@@ -39,3 +39,8 @@
 - Add claim button to ticket details - Redux/Context needed for this!
 - Update owner on main page ticket table based off claimed - Either Redux/Context
 - Fetch files in ticket
+
+* Main Page -----
+  - Add a landing page
+  - Find inispiration from somewhere for this
+  - ^ Just make sure it looks purdy

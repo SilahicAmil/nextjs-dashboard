@@ -3,28 +3,8 @@ import Link from "next/link";
 import { MongoClient } from "mongodb";
 import TicketTable from "../components/TicketTable/TicketTable";
 
-const DUMMY_DATA = [
-  {
-    ticketId: "123",
-    owner: "John Stossel",
-    tier: "Tier A",
-    title: "Fix useMemo Hook",
-  },
-  {
-    ticketId: "t23",
-    owner: "Steven Stossel",
-    tier: "Tier B",
-    title: "Fix Form Hook.",
-  },
-  {
-    ticketId: "t34",
-    owner: "John Stevens",
-    tier: "Tier AA",
-    title: "Fix useEffect Hook",
-  },
-];
-
 const HomePage = (props) => {
+  console.log(props.id);
   return (
     <>
       <Head>
@@ -37,13 +17,11 @@ const HomePage = (props) => {
           <Link href="/new-ticket">New Ticket</Link>
         </button>
 
-        <TicketTable tickets={props.tickets} />
+        <TicketTable ticket={props.ticket} />
       </div>
     </>
   );
 };
-
-export default HomePage;
 
 export const getStaticProps = async () => {
   const client = await MongoClient.connect(
@@ -60,7 +38,7 @@ export const getStaticProps = async () => {
 
   return {
     props: {
-      tickets: tickets.map((ticket) => ({
+      ticket: tickets.map((ticket) => ({
         title: ticket.title,
         owner: ticket.owner,
         tier: ticket.tier,
@@ -69,9 +47,10 @@ export const getStaticProps = async () => {
         id: ticket._id.toString(),
       })),
     },
-    revalidate: 15,
+    revalidate: 10,
   };
 };
 
+export default HomePage;
 // add getStatic props to fetch data
 // add file to API for just fetching data

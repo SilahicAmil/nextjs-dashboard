@@ -19,15 +19,15 @@ const TicketTable = (props) => {
 
   return (
     <div className="overflow-x-auto w-full ">
-      <table className="table w-full">
+      <table className="table w-full ">
         {/* <!-- head --> */}
         <thead>
           <tr>
-            <th></th>
-            <th>Submitter</th>
-            <th>Ttitle</th>
-            <th>Ticket Id</th>
-            <th></th>
+            <th className="bg-white text-black"></th>
+            <th className="bg-white text-black">Submitter</th>
+            <th className="bg-white text-black">Ttitle</th>
+            <th className="bg-white text-black">Ticket Id</th>
+            <th className="bg-white text-black"></th>
           </tr>
         </thead>
         <tbody>
@@ -38,27 +38,27 @@ const TicketTable = (props) => {
         */}
           {props.ticket.map((item) => {
             return (
-              <tr key={item.id}>
-                <th></th>
+              <tr key={item.id} className="text-black">
+                <th className="bg-white text"></th>
 
-                <td>
+                <td className="bg-white">
                   {item.owner}
                   <br></br>
-                  <span className="badge badge-ghost badge-sm p-2">
-                    {item.tier} Ticket
+                  <span className="badge text-white p-2  tracking-wide badge-md ">
+                    {item.tier}
                   </span>
                 </td>
-                <td>
-                  <p className="text-xs truncate flex-shrink p-6">
+                <td className="bg-white">
+                  <p className="text-sm truncate flex-shrink p-6">
                     {item.title}
                   </p>
                 </td>
-                <th>
+                <th className="bg-white">
                   <button className="btn btn-ghost btn-xs">
                     # {item.id.substring(0, 8)}
                   </button>
                 </th>
-                <th className="justify-center items-center">
+                <th className="justify-center items-center bg-white">
                   <button
                     className="btn hover:bg-gray-500"
                     onClick={() => {

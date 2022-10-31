@@ -1,46 +1,48 @@
 - Overall -----
-- Find a Color Pallete that works across the app
-- Probably need to learn some UI/UX for this
+
+  - Find a Color Pallete that works across the app
+  - Probably need to learn some UI/UX for this
 
 - USER PROFILE ----- (Need to implement this before I can add Owner Button)
 
-* Add user profile component(s)
-* View notebook to see what user profile needs to look like
-* On user profile show only tickets owned by person
-* Add API route to fetch user data
-* Figure out Next Auth
+  - Add user profile component(s)
+  - View notebook to see what user profile needs to look like
+  - On user profile show only tickets owned by person
+  - Add API route to fetch user data
+  - Figure out Next Auth
 
-- New Ticket ----- (Practically Done - Finishing this first)
+* New Ticket ----- (Practically Done )
 
-<!-- * Setup submitFormHandler with the new ticket API -->
+  - Add Limitation to number of characters allowed in title and name
+  - Description limit to like 500 characters maybe
+  - Move Form into a custom hook most likely
 
-- Add Limitation to number of characters allowed in title and name
-- Description limit to like 500 characters maybe
-- Move Form into a custom hook most likely
+* Main Ticket Table ----- (Third Most Time Taker)
+
+  - Update owner on based off claimed in ticket details - Redux/Context
+  - Style New Job Button
+
+* Ticket Details ----- (Will Take The Most Time - Start Here)
+
+  - Add claim button to ticket details - Redux/Context needed for this!
+  - Update owner on main page ticket table based off claimed - Either Redux/Context
+  - Fetch files in ticket
+
+- Main Page -----
+  - Add a landing page
+  - Find inispiration from somewhere for this
+  - ^ Just make sure it looks purdy
+
+* DONE -----
+
+<!-- - Add ticket details component(s) - check whiteboard/notebook for layout -->
+<!-- - Add API route for notes based off ticketId -->
+<!-- * Add New Job/ Ticket Button above table on main page -->
+<!-- * Fetch Owner (from context), Title, Tier, Ticket ID Only -->
+<!-- * Add API to fetch ticket data -->
   <!-- * Add new ticket component(s) -->
   <!-- * Add API route for adding new ticket -->
   <!-- - View notebook on how new ticket form should look -->
   <!-- - Add Tier Dropdown - Tier C, Tier B, Tier A -->
   <!-- - Figure out of how attach files -->
-
-* Main Ticket Table ----- (Third Most Time Taker)
-
-<!-- * Fetch Owner (from context), Title, Tier, Ticket ID Only -->
-<!-- * Add API to fetch ticket data -->
-
-- Update owner on based off claimed in ticket details - Redux/Context
-<!-- * Add New Job/ Ticket Button above table on main page -->
-- Style New Job Button
-
-* Ticket Details ----- (Will Take The Most Time - Start Here)
-
-- Add ticket details component(s) - check whiteboard/notebook for layout
-- Add API route for notes based off ticketId
-- Add claim button to ticket details - Redux/Context needed for this!
-- Update owner on main page ticket table based off claimed - Either Redux/Context
-- Fetch files in ticket
-
-* Main Page -----
-  - Add a landing page
-  - Find inispiration from somewhere for this
-  - ^ Just make sure it looks purdy
+  <!-- * Setup submitFormHandler with the new ticket API -->

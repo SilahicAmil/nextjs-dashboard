@@ -60,7 +60,7 @@ const TicketTable = (props) => {
                 </th>
                 <th className="justify-center items-center bg-white">
                   <button
-                    className="btn hover:bg-gray-500"
+                    className="btn bg-black hover:bg-white hover:text-black"
                     onClick={() => {
                       router.push("/" + item.id);
                     }}

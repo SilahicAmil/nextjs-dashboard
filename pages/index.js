@@ -1,3 +1,4 @@
+import { AiOutlinePlus } from "react-icons/ai";
 import Head from "next/head";
 import Link from "next/link";
 import { MongoClient } from "mongodb";
@@ -12,7 +13,8 @@ const HomePage = (props) => {
       </Head>
       <div>
         {/* Move this into it's own component */}
-        <button className="btn flex ml-auto mr-5 bg-red-500 text-white m-4 ">
+        <button className="btn flex ml-auto mr-5 bg-green-500 text-white m-4 ">
+          <AiOutlinePlus className="text-white text-xl mr-1" />
           <Link href="/new-ticket">New Ticket</Link>
         </button>
 

@@ -21,6 +21,7 @@
 
   - Update owner on based off claimed in ticket details - Redux/Context
   - Style New Job Button
+  - Add a Side Nav for User Profile (check notebooks for drawing)
 
 * Ticket Details ----- (Will Take The Most Time - Start Here)
 
@@ -38,7 +39,7 @@
 <!-- - Add ticket details component(s) - check whiteboard/notebook for layout -->
 <!-- - Add API route for notes based off ticketId -->
 <!-- * Add New Job/ Ticket Button above table on main page -->
-<!-- * Fetch Owner (from context), Title, Tier, Ticket ID Only -->
+<!-- * Fetch Owner , Title, Tier, Ticket ID Only -->
 <!-- * Add API to fetch ticket data -->
   <!-- * Add new ticket component(s) -->
   <!-- * Add API route for adding new ticket -->

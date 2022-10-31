@@ -37,7 +37,9 @@ const Navigation = (props) => {
       </div>
       <div className="navbar-center">
         <Link href="/">
-          <a className="btn btn-ghost normal-case text-2xl">Takeya Ticket</a>
+          <a className="btn btn-ghost normal-case text-2xl hover:bg-black">
+            Takeya Ticket
+          </a>
         </Link>
       </div>
       <div className="navbar-end">

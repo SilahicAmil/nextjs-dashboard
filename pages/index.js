@@ -4,7 +4,6 @@ import { MongoClient } from "mongodb";
 import TicketTable from "../components/TicketTable/TicketTable";
 
 const HomePage = (props) => {
-  console.log(props.id);
   return (
     <>
       <Head>
@@ -13,7 +12,7 @@ const HomePage = (props) => {
       </Head>
       <div>
         {/* Move this into it's own component */}
-        <button className="btn flex flex-row-reverse bg-red-500 text-white m-4 ">
+        <button className="btn flex ml-auto mr-5 bg-red-500 text-white m-4 ">
           <Link href="/new-ticket">New Ticket</Link>
         </button>
 

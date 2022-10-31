@@ -7,7 +7,7 @@ const TicketTable = (props) => {
 
   // If I made the button a child component I think I could use the below
   // have a workaround for now but interesting
-  // const router = useRouter();
+  const router = useRouter();
 
   // const showDetailsHandler = () => {
   //   // still showing /undefined

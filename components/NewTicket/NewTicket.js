@@ -41,7 +41,7 @@ const NewTicket = (props) => {
 
   return (
     <>
-      <div className="mt-4 h-full bg-base-100 flex items-center justify-center">
+      <div className="mt-4  h-full py-12 bg-base-100 flex items-center justify-center">
         <form className="w-full max-w-lg " onSubmit={submitFormHandler}>
           <div className="flex flex-wrap -mx-3 mb-6 ">
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -140,7 +140,7 @@ const NewTicket = (props) => {
 
             <button
               type="submit"
-              className="btn block tracking-wide w-full bg-white text-black mt-4"
+              className="btn block tracking-wide w-full bg-white text-black mt-4 hover:bg-black hover:text-white"
             >
               Submit
             </button>

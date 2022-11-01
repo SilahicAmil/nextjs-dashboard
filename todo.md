@@ -15,16 +15,12 @@
 
   - Add Limitation to number of characters allowed in title and name
   - Description limit to like 500 characters maybe
-  - Move Form into a custom hook most likely
 
-* Main Ticket Table ----- (Third Most Time Taker)
-
-  - Update owner on based off claimed in ticket details - Redux/Context
-  - Style New Job Button
+* Main Ticket Table -----
 
 * Ticket Details ----- (Will Take The Most Time - Start Here)
 
-  - Add claim button to ticket details - Redux/Context needed for this!
+  - Add claim button next to notes button - Redux/Context needed for this!
   - Update owner on main page ticket table based off claimed - Either Redux/Context
   - Fetch files in ticket
 
@@ -46,3 +42,4 @@
   <!-- - Add Tier Dropdown - Tier C, Tier B, Tier A -->
   <!-- - Figure out of how attach files -->
   <!-- * Setup submitFormHandler with the new ticket API -->
+  <!-- - Style New Job Button -->

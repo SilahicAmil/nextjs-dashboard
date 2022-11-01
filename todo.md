@@ -21,7 +21,6 @@
 
   - Update owner on based off claimed in ticket details - Redux/Context
   - Style New Job Button
-  - Add a Side Nav for User Profile (check notebooks for drawing)
 
 * Ticket Details ----- (Will Take The Most Time - Start Here)
 

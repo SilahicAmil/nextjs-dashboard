@@ -4,6 +4,8 @@ const TicketDeails = (props) => {
   // Eventually use a switch statement for each tier
   // could just do this for each tier but would be a pain
 
+  // Extract with to a context or redux
+  // still havent decided which one to use
   const tierTicketA =
     props.tier === "Tier A" ? (
       <div className="bg-red-500 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">

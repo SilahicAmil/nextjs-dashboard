@@ -14,6 +14,7 @@ const TicketDetailsPage = (props) => {
 };
 
 export const getStaticPaths = async () => {
+  // MOVE DB CONNECTION STRING INTO .ENV FILE
   const client = await MongoClient.connect(
     "mongodb+srv://designate:Scabby123@cluster0.hho9svc.mongodb.net/?retryWrites=true&w=majority"
   );
@@ -38,7 +39,7 @@ export const getStaticPaths = async () => {
 // add file to API to do above and just fetch here
 export const getStaticProps = async (context) => {
   const ticketId = context.params.ticketId;
-
+  // MOVE DB CONNECTION STRING INTO .ENV FILE
   const client = await MongoClient.connect(
     "mongodb+srv://designate:Scabby123@cluster0.hho9svc.mongodb.net/?retryWrites=true&w=majority"
   );

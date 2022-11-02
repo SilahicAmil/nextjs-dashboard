@@ -24,7 +24,11 @@ const HomePage = (props) => {
   );
 };
 
+// add getStatic props to fetch data
+// add file to API for just fetching data
 export const getStaticProps = async () => {
+  // MOVE DB CONNECTION STRING INTO .ENV FILE
+
   const client = await MongoClient.connect(
     "mongodb+srv://designate:Scabby123@cluster0.hho9svc.mongodb.net/?retryWrites=true&w=majority"
   );
@@ -53,5 +57,3 @@ export const getStaticProps = async () => {
 };
 
 export default HomePage;
-// add getStatic props to fetch data
-// add file to API for just fetching data

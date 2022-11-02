@@ -3,8 +3,13 @@
   - Find a Color Pallete that works across the app
   - Probably need to learn some UI/UX for this
 
-- USER PROFILE ----- (Need to implement this before I can add Owner Button)
+* NavBar -----
+  - Need to find a better looking nav bar
+  - DaisyUI probably has some poggers stuff
+  - Wish they had a side nav sad face (might just make my own YOLO)
 
+- USER PROFILE ----- (Need to implement this before I can add Owner Button)
+  - Next auth should make this "EASY"
   - Add user profile component(s)
   - View notebook to see what user profile needs to look like
   - On user profile show only tickets owned by person
@@ -13,8 +18,8 @@
 
 * New Ticket ----- (Practically Done )
 
-  - Add Limitation to number of characters allowed in title and name
-  - Description limit to like 500 characters maybe
+  - Add like 25-30 Character Title Limit maybe?
+  - Description limit to like 500 characters maybe?
 
 * Main Ticket Table -----
 

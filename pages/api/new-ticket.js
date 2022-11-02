@@ -4,6 +4,7 @@ const helper = async (req, res) => {
   if (req.method === "POST") {
     const data = req.body;
 
+    // MOVE DB CONNECTION STRING INTO .ENV FILE
     const client = await MongoClient.connect(
       "mongodb+srv://designate:Scabby123@cluster0.hho9svc.mongodb.net/?retryWrites=true&w=majority"
     );

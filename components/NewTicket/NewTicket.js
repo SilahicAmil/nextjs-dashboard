@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 
 const NewTicket = (props) => {
   // Extract all this into a form hook
+  // yeah a form hook with APIs and everything would be POGGERS
   const titleRef = useRef();
   const tierRef = useRef();
   const descriptionRef = useRef();

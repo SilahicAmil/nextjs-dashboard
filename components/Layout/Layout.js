@@ -4,7 +4,7 @@ const Layout = (props) => {
   return (
     <>
       <Navigation />
-      <main className="font-mono">{props.children}</main>
+      <main className="font-mono ">{props.children}</main>
     </>
   );
 };

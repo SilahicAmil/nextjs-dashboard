@@ -5,9 +5,7 @@ const helper = async (req, res) => {
     const data = req.body;
 
     // MOVE DB CONNECTION STRING INTO .ENV FILE
-    const client = await MongoClient.connect(
-      "mongodb+srv://designate:Scabby123@cluster0.hho9svc.mongodb.net/?retryWrites=true&w=majority"
-    );
+    const client = await MongoClient.connect(process.env.DB_URL);
     // add try catch block
     const db = client.db();
 

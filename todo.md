@@ -4,6 +4,7 @@
   - Probably need to learn some UI/UX for this
   - **Create Loading States and Spinners for components - Mainly TicketTable and NewTicket**
   - **Also add better error handling for APIs**
+  - **Re-Add .env for PROD and LOCAL**
 
 * NavBar -----
   - Need to find a better looking nav bar
@@ -20,16 +21,21 @@
 
 * New Ticket ----- (Practically Done )
 
+  - Add Email field
   - Add like 25-30 Character Title Limit maybe?
-  - Description limit to like 500 characters maybe?
+  - Description limit to like 150 characters maybe?
 
 * Main Ticket Table -----
 
 * Ticket Details ----- (Will Take The Most Time - Start Here)
 
-  - Add claim button next to notes button - Redux/Context needed for this!
-  - Update owner on main page ticket table based off claimed - Either Redux/Context
-  - Fetch files in ticket
+  - Add claim button next to notes button (right side - Look at SRT photos)
+  - Show owner right next to claim button
+  - Add reply button on bottom where attachments are
+  - Redo the whole page so there is a split in the middle - Look at SRT photos
+  - Works on how to add files and retrieve from DB for download ability
+  - Add submitter name on left hand side of split ( Look at SRT photos)
+  -
 
 - Main Page -----
   - **Add a landing page**

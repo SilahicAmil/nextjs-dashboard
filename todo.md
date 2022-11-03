@@ -2,6 +2,8 @@
 
   - Find a Color Pallete that works across the app
   - Probably need to learn some UI/UX for this
+  - Create hook(s) for fetching from DB - Check Web Dev Junkie for reminder
+  - Create .env file for URLS
 
 * NavBar -----
   - Need to find a better looking nav bar

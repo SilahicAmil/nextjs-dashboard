@@ -1,11 +1,15 @@
 import { MongoClient, ObjectId } from "mongodb";
 
+import Head from "next/head";
 import TicketDeails from "../../components/TicketDetails/TicketDetails";
 
 const TicketDetailsPage = (props) => {
-  console.log(props.ticketId);
   return (
     <>
+      <Head>
+        <title>Takeya Ticket - {props.ticketData.id}</title>
+        <meta content="" />
+      </Head>
       <div>
         <TicketDeails {...props.ticketData} />
       </div>
@@ -14,6 +18,7 @@ const TicketDetailsPage = (props) => {
 };
 
 export const getStaticPaths = async () => {
+  // cant use proccess.env.DB_URL here and no clue why
   const client = await MongoClient.connect(
     "mongodb+srv://designate:Scabby123@cluster0.hho9svc.mongodb.net/?retryWrites=true&w=majority"
   );

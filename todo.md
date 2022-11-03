@@ -2,7 +2,8 @@
 
   - Find a Color Pallete that works across the app
   - Probably need to learn some UI/UX for this
-  - Create hook(s) for fetching from DB - Check Web Dev Junkie for reminder
+  - **Create Loading States and Spinners for components - Mainly TicketTable and NewTicket**
+  - **Also add better error handling for APIs**
 
 * NavBar -----
   - Need to find a better looking nav bar
@@ -31,7 +32,7 @@
   - Fetch files in ticket
 
 - Main Page -----
-  - Add a landing page
+  - **Add a landing page**
   - Find inispiration from somewhere for this
   - ^ Just make sure it looks purdy
 

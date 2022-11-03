@@ -6,7 +6,7 @@ const helper = async (req, res) => {
 
     // MOVE DB CONNECTION STRING INTO .ENV FILE
     const client = await MongoClient.connect(process.env.DB_URL);
-    // add try catch block
+    // add try catch block and error handling
     const db = client.db();
 
     const ticketsCollection = db.collection("tickets");

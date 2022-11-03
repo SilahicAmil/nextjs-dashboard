@@ -1,3 +1,4 @@
+import Head from "next/head";
 import NewTicket from "../../components/NewTicket/NewTicket";
 import { useRouter } from "next/router";
 
@@ -21,6 +22,10 @@ const NewTicketPage = () => {
 
   return (
     <>
+      <Head>
+        <title>Takeya Ticket - Create Ticket</title>
+        <meta content="" />
+      </Head>
       <NewTicket onAddTicket={addTicketHandler} />
     </>
   );

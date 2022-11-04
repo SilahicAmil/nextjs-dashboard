@@ -2,13 +2,7 @@
 
   - Find a Color Pallete that works across the app
   - Probably need to learn some UI/UX for this
-
   - **Also add better error handling for APIs**
-
-* NavBar -----
-  - Need to find a better looking nav bar
-  - DaisyUI probably has some poggers stuff
-  - Wish they had a side nav sad face (might just make my own YOLO)
 
 - USER PROFILE ----- (Need to implement this before I can add Owner Button)
   - Next auth should make this "EASY"
@@ -16,11 +10,10 @@
   - View notebook to see what user profile needs to look like
   - On user profile show only tickets owned by person
   - Add API route to fetch user data
-  - Figure out Next Auth
+  - **Figure out Next Auth**
 
 * New Ticket ----- (Practically Done )
 
-  - Add Email field
   - Add like 25-30 Character Title Limit maybe?
   - Description limit to like 150 characters maybe?
 
@@ -28,6 +21,8 @@
 
 * Ticket Details ----- (Will Take The Most Time - Start Here)
   - Works on how to add files and retrieve from DB for download ability
+  - Reply button should be likes a comments section
+  - Remove notes button
 
 - Main Page -----
   - **Add a landing page**

@@ -28,6 +28,7 @@ const TicketDeails = (props) => {
       <div class="flex h-full w-full m-4">
         <div class="grid w-6/12 flex-grow card bg-base-300 rounded-box ">
           <div className="overflow-hidden   bg-white shadow sm:rounded-lg">
+            {/* add tabs here for notes and main */}
             <div className=" sm:px-6">
               {/* button should popup a modal where you can add notes for ticketId */}
               <button className="ml-auto mr-0 mt-4 flex text-black btn bg-white hover:bg-black hover:text-white">

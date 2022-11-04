@@ -54,7 +54,12 @@ const TicketTable = (props) => {
                   </p>
                 </td>
                 <th className="bg-white">
-                  <button className="btn btn-ghost btn-xs">
+                  <button
+                    className="btn btn-ghost btn-xs"
+                    onClick={() => {
+                      router.push("/" + item.id);
+                    }}
+                  >
                     # {item.id.substring(0, 8)}
                   </button>
                 </th>

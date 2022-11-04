@@ -1,9 +1,16 @@
 import { FiPaperclip } from "react-icons/fi";
+import Modal from "../Modal/Modal";
+import { useState } from "react";
 
 const TicketDeails = (props) => {
+  const [showModal, setShowModal] = useState(false);
+
+  const showModalHandler = () => {
+    setShowModal(true);
+  };
+
   // Eventually use a switch statement for each tier
   // could just do this for each tier but would be a pain
-
   // Extract with to a context or redux
   // still havent decided which one to use
   const tierTicketA =
@@ -34,6 +41,7 @@ const TicketDeails = (props) => {
               <button className="ml-auto mr-0 mt-4 flex text-white btn ">
                 Notes
               </button>
+
               <h3 className="text-lg font-medium leading-6 text-gray-900">
                 {props.title}
               </h3>
@@ -144,6 +152,9 @@ const TicketDeails = (props) => {
           <div className="flex justify-center p-4 m-4 gap-10 items-center ">
             Owner: {props.owner}
             <button className="btn text-white">Claim</button>
+          </div>
+          <div>
+            <h1>Status: Pending</h1>
           </div>
         </div>
       </div>

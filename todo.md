@@ -29,7 +29,6 @@
 
 * Ticket Details ----- (Will Take The Most Time - Start Here)
 
-  - Add claim button next to notes button (right side - Look at SRT photos)
   - Show owner right next to claim button
   - Add reply button on bottom where attachments are
   - Redo the whole page so there is a split in the middle - Look at SRT photos

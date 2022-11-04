@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { MdOutlineDarkMode } from "react-icons/md";
 
-const Navigation = (props) => {
+const Navigation = () => {
   return (
     <div className="navbar bg-base-100 ">
       <div className="navbar-start">

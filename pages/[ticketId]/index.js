@@ -19,9 +19,7 @@ const TicketDetailsPage = (props) => {
 
 export const getStaticPaths = async () => {
   // cant use proccess.env.DB_URL here and no clue why
-  const client = await MongoClient.connect(
-    "mongodb+srv://designate:Scabby123@cluster0.hho9svc.mongodb.net/?retryWrites=true&w=majority"
-  );
+  const client = await MongoClient.connect(process.env.DB_URL);
 
   const db = client.db();
 

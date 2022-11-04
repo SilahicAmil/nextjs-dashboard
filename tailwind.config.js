@@ -9,5 +9,9 @@ module.exports = {
     extend: {},
   },
   daisyui: {},
-  plugins: [require("daisyui"), require("@tailwindcss/forms")],
+  plugins: [
+    require("daisyui"),
+    require("@tailwindcss/forms"),
+    require("tw-elements/dist/plugin"),
+  ],
 };

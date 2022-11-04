@@ -29,9 +29,9 @@ const TicketDeails = (props) => {
         <div class="grid w-6/12 flex-grow card bg-base-300 rounded-box ">
           <div className="overflow-hidden   bg-white shadow sm:rounded-lg">
             {/* add tabs here for notes and main */}
+            {/* button should popup a modal where you can add notes for ticketId */}
             <div className=" sm:px-6">
-              {/* button should popup a modal where you can add notes for ticketId */}
-              <button className="ml-auto mr-0 mt-4 flex text-black btn bg-white hover:bg-black hover:text-white">
+              <button className="ml-auto mr-0 mt-4 flex text-white btn ">
                 Notes
               </button>
               <h3 className="text-lg font-medium leading-6 text-gray-900">
@@ -79,7 +79,7 @@ const TicketDeails = (props) => {
 
           also make this own component maybe
            */}
-                <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 ">
+                {/* <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 ">
                   <dt className="text-sm font-medium text-gray-500">
                     Attachments
                   </dt>
@@ -128,16 +128,22 @@ const TicketDeails = (props) => {
                       </li>
                     </ul>
                   </dd>
-                </div>
+                </div> */}
               </dl>
+            </div>
+            <div>
+              <button className="text-white flex ml-auto m-5 p-4 btn">
+                Reply
+              </button>
             </div>
           </div>
         </div>
+
         <div class="divider divider-horizontal"></div>
-        <div class="grid  h-full flex-grow  bg-base-300  place-items-center">
-          <div>{props.owner}</div>
-          <div>
-            <button>Claim</button>
+        <div class="grid  h-full flex-grow  bg-white text-black rounded-xl mr-8  place-items-center">
+          <div className="flex justify-center p-4 m-4 gap-10 items-center ">
+            Owner: {props.owner}
+            <button className="btn text-white">Claim</button>
           </div>
         </div>
       </div>

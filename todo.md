@@ -2,7 +2,7 @@
 
   - Find a Color Pallete that works across the app
   - Probably need to learn some UI/UX for this
-  - **Create Loading States and Spinners for components - Mainly TicketTable and NewTicket**
+
   - **Also add better error handling for APIs**
 
 * NavBar -----
@@ -53,3 +53,5 @@
    <!-- - Show owner right next to claim button -->
    <!-- - Redo the whole page so there is a split in the middle - Look at SRT photos -->
    <!-- - **Re-Add .env for PROD and LOCAL** -->
+
+     <!--  **Create Loading States and Spinners for components  Mainly TicketTable and NewTicket** -->

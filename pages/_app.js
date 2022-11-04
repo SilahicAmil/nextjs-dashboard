@@ -8,9 +8,10 @@ import Router from "next/router";
 
 //nextjs.org/docs/api-reference/next/router
 // router.events
+// Could become a problem later buy YOLO
 
 function MyApp({ Component, pageProps }) {
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(null);
 
   useEffect(() => {
     const start = () => {
@@ -20,6 +21,7 @@ function MyApp({ Component, pageProps }) {
     const end = () => {
       setIsLoading(false);
     };
+
     Router.events.on("routeChangeStart", start);
     Router.events.on("routeChangeComplete", end);
     Router.events.on("routeChangeError", end);

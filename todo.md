@@ -22,6 +22,9 @@
 * Ticket Details ----- (Will Take The Most Time - Start Here)
   - Works on how to add files and retrieve from DB for download ability
   - Reply button should be likes a comments section
+  - Modal of comments
+  - Need new API route for this
+  - fetch ticket comments in [ticketId] and pass to ticket details on click
   - Remove notes button
 
 - Main Page -----

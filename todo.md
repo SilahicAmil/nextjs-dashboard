@@ -4,7 +4,6 @@
   - Probably need to learn some UI/UX for this
   - **Create Loading States and Spinners for components - Mainly TicketTable and NewTicket**
   - **Also add better error handling for APIs**
-  - **Re-Add .env for PROD and LOCAL**
 
 * NavBar -----
   - Need to find a better looking nav bar
@@ -28,13 +27,7 @@
 * Main Ticket Table -----
 
 * Ticket Details ----- (Will Take The Most Time - Start Here)
-
-  - Show owner right next to claim button
-  - Add reply button on bottom where attachments are
-  - Redo the whole page so there is a split in the middle - Look at SRT photos
   - Works on how to add files and retrieve from DB for download ability
-  - Add submitter name on left hand side of split ( Look at SRT photos)
-  -
 
 - Main Page -----
   - **Add a landing page**
@@ -56,3 +49,7 @@
   <!-- * Setup submitFormHandler with the new ticket API -->
   <!-- - Style New Job Button -->
   <!-- - Create .env file for URLS -->
+  <!-- - Add reply button on bottom where attachments are -->
+   <!-- - Show owner right next to claim button -->
+   <!-- - Redo the whole page so there is a split in the middle - Look at SRT photos -->
+   <!-- - **Re-Add .env for PROD and LOCAL** -->

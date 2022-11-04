@@ -3,12 +3,6 @@ import Modal from "../Modal/Modal";
 import { useState } from "react";
 
 const TicketDeails = (props) => {
-  const [showModal, setShowModal] = useState(false);
-
-  const showModalHandler = () => {
-    setShowModal(true);
-  };
-
   // Eventually use a switch statement for each tier
   // could just do this for each tier but would be a pain
   // Extract with to a context or redux
@@ -32,12 +26,11 @@ const TicketDeails = (props) => {
 
   return (
     <>
-      <div class="flex h-full w-full m-4">
-        <div class="grid w-6/12 flex-grow card bg-base-300 rounded-box ">
+      <div className="flex h-full w-full m-4">
+        <div className="grid w-6/12 flex-grow card bg-base-300 rounded-box ">
           <div className="overflow-hidden   bg-white shadow sm:rounded-lg">
-            {/* add tabs here for notes and main */}
-            {/* button should popup a modal where you can add notes for ticketId */}
             <div className=" sm:px-6">
+              {/* Still dont know if I want to do a modal OR new page */}
               <button className="ml-auto mr-0 mt-4 flex text-white btn ">
                 Notes
               </button>
@@ -147,8 +140,8 @@ const TicketDeails = (props) => {
           </div>
         </div>
 
-        <div class="divider divider-horizontal"></div>
-        <div class="grid  h-full flex-grow  bg-white text-black rounded-xl mr-8  place-items-center">
+        <div className="divider divider-horizontal"></div>
+        <div className="grid  h-full flex-grow  bg-white text-black rounded-xl mr-8  place-items-center">
           <div className="flex justify-center p-4 m-4 gap-10 items-center ">
             Owner: {props.owner}
             <button className="btn text-white">Claim</button>

@@ -6,18 +6,22 @@ const NewTicketPage = () => {
   const router = useRouter();
 
   const addTicketHandler = async (enteredTicketData) => {
-    const response = await fetch("/api/new-ticket", {
-      method: "POST",
-      body: JSON.stringify(enteredTicketData),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    try {
+      const response = await fetch("/api/new-ticket", {
+        method: "POST",
+        body: JSON.stringify(enteredTicketData),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
 
-    const data = await response.json();
-    console.log(data);
+      const data = await response.json();
+      console.log(data);
 
-    router.push("/");
+      router.push("/");
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   return (
@@ -32,6 +36,3 @@ const NewTicketPage = () => {
 };
 
 export default NewTicketPage;
-
-// add getStaticProps for submitting new ticket in new-ticket file
-// add file to API folder for new ticket submission

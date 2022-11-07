@@ -23,6 +23,11 @@ const TicketDeails = (props) => {
       </div>
     );
 
+  const tier = props.tier;
+  switch (tier) {
+    case "Tier A":
+  }
+
   return (
     <>
       <div className="flex h-full w-full m-4">

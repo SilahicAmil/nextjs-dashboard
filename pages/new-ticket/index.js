@@ -6,6 +6,7 @@ const NewTicketPage = () => {
   const router = useRouter();
 
   const addTicketHandler = async (enteredTicketData) => {
+    //  dont think I need a try catch here but fuq it
     try {
       const response = await fetch("/api/new-ticket", {
         method: "POST",

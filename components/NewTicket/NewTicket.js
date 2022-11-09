@@ -33,7 +33,7 @@ const NewTicket = (props) => {
     };
 
     event.target.reset();
-    router.push("/");
+    // router.push("/");
 
     props.onAddTicket(formData);
 
@@ -107,6 +107,7 @@ const NewTicket = (props) => {
                   id="grid-description"
                   cols="30"
                   rows="10"
+                  maxLength={400}
                   ref={descriptionRef}
                   className="appearance-none block w-full bg-white text-black border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 />
@@ -128,6 +129,7 @@ const NewTicket = (props) => {
                   >
                     <option>Web</option>
                     <option>Mobile</option>
+                    <option>Web & Mobile</option>
                   </select>
                 </div>
               </div>

@@ -23,21 +23,16 @@ const TicketDeails = (props) => {
       </div>
     );
 
-  const tier = props.tier;
-  switch (tier) {
-    case "Tier A":
-  }
-
   return (
     <>
       <div className="flex h-full w-full m-4">
         <div className="grid w-6/12 flex-grow card bg-base-300 rounded-box ">
           <div className="overflow-hidden   bg-white shadow sm:rounded-lg">
-            <div className=" sm:px-6">
+            <div className=" sm:px-6 p-4 m-4">
               {/* Still dont know if I want to do a modal OR new page */}
-              <button className="ml-auto mr-0 mt-4 flex text-white btn ">
+              {/* <button className="ml-auto mr-0 mt-4 flex text-white btn ">
                 Notes
-              </button>
+              </button> */}
 
               <h3 className="text-lg font-medium leading-6 text-gray-900">
                 {props.title}
@@ -74,9 +69,9 @@ const TicketDeails = (props) => {
                   <dt className="text-sm font-medium text-gray-500 ">
                     Issue Description
                   </dt>
-                  <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0 ">
+                  <p className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0 whitespace-pre-line">
                     {props.description}
-                  </dd>
+                  </p>
                 </div>
                 {/* Eventually add functionality for below
           

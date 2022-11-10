@@ -9,6 +9,7 @@ import Router from "next/router";
 //nextjs.org/docs/api-reference/next/router
 // router.events
 // Could become a problem later buy YOLO
+// probably gonna get rid of this later idk
 
 function MyApp({ Component, pageProps }) {
   const [isLoading, setIsLoading] = useState(null);

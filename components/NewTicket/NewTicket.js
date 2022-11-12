@@ -33,7 +33,7 @@ const NewTicket = (props) => {
     };
 
     event.target.reset();
-    // router.push("/");
+    router.push("/");
 
     props.onAddTicket(formData);
 

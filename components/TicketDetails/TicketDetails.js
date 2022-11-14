@@ -1,11 +1,16 @@
-import { FiPaperclip } from "react-icons/fi";
-import Modal from "../Modal/Modal";
 import { useState } from "react";
 
 const TicketDeails = (props) => {
+  const [showReply, setShowReply] = useState(false);
+
+  const showReplyInputHandler = () => {
+    setShowReply(true);
+  };
+
   // Eventually use a switch statement for each tier
   // maybe a context would be usefull
   // probably not since only used here but IDK
+
   const tierTicketA =
     props.tier === "Tier A" ? (
       <div className="bg-red-500 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -132,10 +137,14 @@ const TicketDeails = (props) => {
               </dl>
             </div>
             <div>
-              <button className="text-white flex ml-auto m-5 p-4 btn">
+              <button
+                className="text-white flex ml-auto m-5 p-4 btn"
+                onClick={showReplyInputHandler}
+              >
                 Reply
               </button>
             </div>
+            {showReply ? <div className="text-black">YOOOO</div> : null}
           </div>
         </div>
 

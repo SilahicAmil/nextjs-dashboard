@@ -4,7 +4,7 @@ const TicketDeails = (props) => {
   const [showReply, setShowReply] = useState(false);
 
   const showReplyInputHandler = () => {
-    setShowReply(true);
+    setShowReply((prevState) => !prevState);
   };
 
   // Eventually use a switch statement for each tier
@@ -136,15 +136,31 @@ const TicketDeails = (props) => {
                 </div> */}
               </dl>
             </div>
-            <div>
+            {showReply ? (
+              <>
+                <textarea
+                  className=" w-full text-black "
+                  name=""
+                  id=""
+                  cols="20"
+                  rows="5"
+                ></textarea>
+                <button
+                  onClick={showReplyInputHandler}
+                  className="text-white flex ml-auto m-5 p-4 btn"
+                >
+                  Submit
+                </button>
+              </>
+            ) : (
               <button
                 className="text-white flex ml-auto m-5 p-4 btn"
                 onClick={showReplyInputHandler}
               >
                 Reply
               </button>
-            </div>
-            {showReply ? <div className="text-black">YOOOO</div> : null}
+            )}
+            <div></div>
           </div>
         </div>
 

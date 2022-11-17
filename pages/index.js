@@ -13,7 +13,7 @@ const HomePage = (props) => {
       <div>
         {/* Move this into it's own component */}
 
-        <button className="btn flex ml-auto mr-5 bg-green-500 text-white m-4 ">
+        <button className="btn flex ml-auto mr-5 bg-white text-black m-4 text-sm ">
           <Link href="/new-ticket">New Ticket</Link>
         </button>
 

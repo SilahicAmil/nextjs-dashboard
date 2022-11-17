@@ -60,6 +60,7 @@ const TicketTable = (props) => {
                       router.push("/" + item.id);
                     }}
                     name="ticket id button"
+                    value="ticket id"
                   >
                     # {item.id.substring(0, 8)}
                   </button>
@@ -71,6 +72,7 @@ const TicketTable = (props) => {
                       router.push("/" + item.id);
                     }}
                     name="ticket details button"
+                    value="ticket details"
                   >
                     <AiOutlineDoubleRight />
                   </button>

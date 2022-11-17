@@ -43,7 +43,7 @@ const Navigation = () => {
         </Link>
       </div>
       <div className="navbar-end">
-        <button className="btn btn-ghost btn-circle">
+        <button className="btn btn-ghost btn-circle" name="dark mode button">
           <MdOutlineDarkMode className="text-xl" />
         </button>
       </div>

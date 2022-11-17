@@ -59,6 +59,7 @@ const TicketTable = (props) => {
                     onClick={() => {
                       router.push("/" + item.id);
                     }}
+                    name="ticket id button"
                   >
                     # {item.id.substring(0, 8)}
                   </button>
@@ -69,6 +70,7 @@ const TicketTable = (props) => {
                     onClick={() => {
                       router.push("/" + item.id);
                     }}
+                    name="ticket details button"
                   >
                     <AiOutlineDoubleRight />
                   </button>

@@ -1,10 +1,24 @@
+import { useRef } from "react";
 import { useState } from "react";
 
 const TicketDeails = (props) => {
   const [showReply, setShowReply] = useState(false);
+  const replyDataRef = useRef();
 
   const showReplyInputHandler = () => {
-    setShowReply((prevState) => !prevState);
+    setShowReply(true);
+  };
+
+  const replyDataHandler = (e) => {
+    e.preventDefault();
+    const replyDataRefValue = replyDataRef.current.value;
+
+    console.log(replyDataRefValue);
+    // pass the data to an api point that adds reply to DB
+    // then make a comments/reply component that displays at the bottom
+    // might also need to change the layout for all this to work
+
+    setShowReply(false);
   };
 
   // Eventually use a switch statement for each tier
@@ -144,9 +158,10 @@ const TicketDeails = (props) => {
                   id=""
                   cols="20"
                   rows="5"
+                  ref={replyDataRef}
                 ></textarea>
                 <button
-                  onClick={showReplyInputHandler}
+                  onClick={replyDataHandler}
                   className="text-white flex ml-auto m-5 p-4 btn"
                 >
                   Submit

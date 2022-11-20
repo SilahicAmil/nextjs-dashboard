@@ -1,3 +1,4 @@
+import Button from "../components/Button/Button";
 import Head from "next/head";
 import Link from "next/link";
 import { MongoClient } from "mongodb";
@@ -11,12 +12,9 @@ const HomePage = (props) => {
         <meta content="" />
       </Head>
       <div>
-        {/* Move this into it's own component */}
-
-        <button className="btn flex ml-auto mr-5 bg-white text-black m-4 text-sm ">
+        <Button>
           <Link href="/new-ticket">New Ticket</Link>
-        </button>
-
+        </Button>
         <TicketTable ticket={props.ticket} />
       </div>
     </>

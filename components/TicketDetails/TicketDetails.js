@@ -3,24 +3,32 @@ import { useRef } from "react";
 import { useState } from "react";
 
 const TicketDeails = (props) => {
+  // idk if context would be good here
   const [showReply, setShowReply] = useState(false);
+  const [owner, setOwner] = useState(props.owner);
   const replyDataRef = useRef();
+
+  // eventually ffetch data from nextAuth for changing the owner
+  // and update the DB
+  const changeOwner = () => {
+    setOwner("Jim Stevens");
+  };
 
   const showReplyInputHandler = () => {
     setShowReply(true);
   };
 
-  const replyDataHandler = (e) => {
-    e.preventDefault();
-    const replyDataRefValue = replyDataRef.current.value;
+  // const replyDataHandler = (e) => {
+  //   e.preventDefault();
+  //   const replyDataRefValue = replyDataRef.current.value;
 
-    console.log(replyDataRefValue);
-    // pass the data to an api point that adds reply to DB
-    // then make a comments/reply component that displays at the bottom
-    // might also need to change the layout for all this to work
+  //   console.log(replyDataRefValue);
+  //   // pass the data to an api point that adds reply to DB
+  //   // then make a comments/reply component that displays at the bottom
+  //   // might also need to change the layout for all this to work
 
-    setShowReply(false);
-  };
+  //   setShowReply(false);
+  // };
 
   // Eventually use a switch statement for each tier
   // maybe a context would be usefull
@@ -153,11 +161,9 @@ const TicketDeails = (props) => {
             </div>
             {showReply ? (
               <>
+                {/* pass the onSubmit prop to TextEditor */}
                 <TextEditor className=" w-full text-black " />
-                <button
-                  onClick={replyDataHandler}
-                  className="text-white flex ml-auto m-5 p-4 btn"
-                >
+                <button className="text-white flex ml-auto m-5 p-4 btn">
                   Submit
                 </button>
               </>
@@ -176,8 +182,10 @@ const TicketDeails = (props) => {
         <div className="divider divider-horizontal"></div>
         <div className="grid  h-full flex-grow  bg-white text-black rounded-xl mr-8  place-items-center">
           <div className="flex justify-center p-4 m-4 gap-10 items-center ">
-            Owner: {props.owner}
-            <button className="btn text-white">Claim</button>
+            Owner: {owner}
+            <button className="btn text-white" onClick={changeOwner}>
+              Claim
+            </button>
           </div>
           <div>
             <h1>Status: Pending</h1>

@@ -7,7 +7,7 @@ const TicketDetailsPage = (props) => {
   return (
     <>
       <Head>
-        <title>Takeya Ticket - # {props.ticketData.id.substring(0, 6)}</title>
+        <title>Takeya Ticket - # {props.ticketData.id.substring(0, 8)}</title>
         <meta content="" />
       </Head>
       <div>

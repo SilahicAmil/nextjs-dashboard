@@ -1,3 +1,4 @@
+import TextEditor from "../TextEditor/TextEditor";
 import { useRef } from "react";
 import { useState } from "react";
 
@@ -152,14 +153,7 @@ const TicketDeails = (props) => {
             </div>
             {showReply ? (
               <>
-                <textarea
-                  className=" w-full text-black "
-                  name=""
-                  id=""
-                  cols="20"
-                  rows="5"
-                  ref={replyDataRef}
-                ></textarea>
+                <TextEditor className=" w-full text-black " />
                 <button
                   onClick={replyDataHandler}
                   className="text-white flex ml-auto m-5 p-4 btn"

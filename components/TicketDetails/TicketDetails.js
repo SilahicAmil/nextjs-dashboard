@@ -6,7 +6,7 @@ const TicketDeails = (props) => {
   // idk if context would be good here
   const [showReply, setShowReply] = useState(false);
   const [owner, setOwner] = useState(props.owner);
-  const replyDataRef = useRef();
+  const [replyData, setReplyData] = useState();
 
   // eventually ffetch data from nextAuth for changing the owner
   // and update the DB
@@ -16,6 +16,13 @@ const TicketDeails = (props) => {
 
   const showReplyInputHandler = () => {
     setShowReply(true);
+  };
+
+  // IDK WHO NO WORKY
+  const replyDataHandler = (event) => {
+    setReplyData(event.target.value);
+    console.log(replyData);
+    setShowReply((prevState) => !prevState);
   };
 
   const deleteTicketHandler = async () => {
@@ -166,8 +173,14 @@ const TicketDeails = (props) => {
             {showReply ? (
               <>
                 {/* pass the onSubmit prop to TextEditor */}
-                <TextEditor className=" w-full text-black " />
-                <button className="text-white flex ml-auto m-5 p-4 btn">
+                <TextEditor
+                  className=" w-full text-black "
+                  onChange={replyData}
+                />
+                <button
+                  className="text-white flex ml-auto m-5 p-4 btn"
+                  onClick={replyDataHandler}
+                >
                   Submit
                 </button>
               </>

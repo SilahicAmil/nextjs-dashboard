@@ -18,6 +18,10 @@ const TicketDeails = (props) => {
     setShowReply(true);
   };
 
+  const deleteTicketHandler = async () => {
+    console.log("delete");
+  };
+
   // const replyDataHandler = (e) => {
   //   e.preventDefault();
   //   const replyDataRefValue = replyDataRef.current.value;
@@ -187,6 +191,10 @@ const TicketDeails = (props) => {
               Claim
             </button>
           </div>
+          <button className="btn text-white" onClick={deleteTicketHandler}>
+            Delete
+          </button>
+
           <div>
             <h1>Status: Pending</h1>
           </div>

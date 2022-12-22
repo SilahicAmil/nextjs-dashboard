@@ -1,6 +1,7 @@
 import { EventDispatcher } from "three";
 import TextEditor from "../TextEditor/TextEditor";
 import { useRef } from "react";
+import { useRouter } from "next/router";
 import { useState } from "react";
 
 const TicketDeails = (props) => {
@@ -8,6 +9,8 @@ const TicketDeails = (props) => {
   const [showReply, setShowReply] = useState(false);
   const [owner, setOwner] = useState(props.owner);
   const [replyData, setReplyData] = useState();
+
+  const router = useRouter();
 
   // eventually ffetch data from nextAuth for changing the owner
   // and update the DB
@@ -36,6 +39,7 @@ const TicketDeails = (props) => {
         "Content-Type": "application/json",
       },
     });
+    router.push("/");
   };
 
   // const replyDataHandler = (e) => {

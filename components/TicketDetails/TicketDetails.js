@@ -12,6 +12,7 @@ const TicketDeails = (props) => {
 
   // eventually ffetch data from nextAuth for changing the owner
   // and update the DB
+  // Put request to add an owner field and update
   const changeOwner = () => {
     setOwner("Jim Stevens");
   };

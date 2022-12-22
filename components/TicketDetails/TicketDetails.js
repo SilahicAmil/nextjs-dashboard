@@ -1,3 +1,4 @@
+import { EventDispatcher } from "three";
 import TextEditor from "../TextEditor/TextEditor";
 import { useRef } from "react";
 import { useState } from "react";
@@ -25,8 +26,10 @@ const TicketDeails = (props) => {
     setShowReply((prevState) => !prevState);
   };
 
-  const deleteTicketHandler = async () => {
-    console.log("delete");
+  const deleteTicketHandler = (deleteTicketId) => {
+    fetch(`/api/delete-ticket/`, {
+      method: "DELETE",
+    });
   };
 
   // const replyDataHandler = (e) => {
@@ -204,7 +207,10 @@ const TicketDeails = (props) => {
               Claim
             </button>
           </div>
-          <button className="btn text-white" onClick={deleteTicketHandler}>
+          <button
+            className="btn text-white"
+            onClick={() => deleteTicketHandler(props.ticketId)}
+          >
             Delete
           </button>
 

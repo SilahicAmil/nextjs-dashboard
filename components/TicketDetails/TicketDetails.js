@@ -1,6 +1,4 @@
-import { EventDispatcher } from "three";
 import TextEditor from "../TextEditor/TextEditor";
-import { useRef } from "react";
 import { useRouter } from "next/router";
 import { useState } from "react";
 

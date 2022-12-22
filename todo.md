@@ -19,6 +19,8 @@
 
 * Main Ticket Table -----
 
+  - Add Refresh button functionality (probably just useRouter thingy)
+
 * Ticket Details ----- (Will Take The Most Time - Start Here)
   - Add Auth so only if logged in can see DELETE button
   - Reply button should be likes a comments section
@@ -26,6 +28,7 @@
   - fetch ticket comments in [ticketId] and pass to ticket details on click
 
 - Main Page -----
+  - If not logged in - show this main page
   - **Add a landing page**
   - Find inispiration from somewhere for this
   - ^ Just make sure it looks purdy

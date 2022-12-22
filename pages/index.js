@@ -15,7 +15,9 @@ const HomePage = (props) => {
         <Button>
           <Link href="/new-ticket">New Ticket</Link>
         </Button>
+
         <TicketTable ticket={props.ticket} />
+        <Button>Refresh</Button>
       </div>
     </>
   );
@@ -45,7 +47,7 @@ export const getStaticProps = async () => {
         id: ticket._id.toString(),
       })),
     },
-    revalidate: 10,
+    revalidate: 5,
   };
 };
 

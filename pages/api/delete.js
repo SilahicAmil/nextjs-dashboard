@@ -3,7 +3,8 @@ import { ObjectId } from "mongodb";
 
 const deleteHelper = async (req, res) => {
   if (req.method === "DELETE") {
-    console.log("Deleted");
+    const { ticketId } = req.body;
+    console.log(ticketId);
   }
 };
 

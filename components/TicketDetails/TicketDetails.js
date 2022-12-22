@@ -27,8 +27,14 @@ const TicketDeails = (props) => {
   };
 
   const deleteTicketHandler = (deleteTicketId) => {
-    fetch(`/api/delete-ticket/`, {
+    fetch(`/api/delete/`, {
       method: "DELETE",
+      body: JSON.stringify({
+        ticketId: deleteTicketId,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
     });
   };
 
@@ -209,7 +215,7 @@ const TicketDeails = (props) => {
           </div>
           <button
             className="btn text-white"
-            onClick={() => deleteTicketHandler(props.ticketId)}
+            onClick={() => deleteTicketHandler(props.id)}
           >
             Delete
           </button>
